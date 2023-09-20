@@ -1,0 +1,40 @@
+.table-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.header,
+.cell {
+  flex-grow: 1;
+  margin: 2px;
+  background-color: lightgray;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 421px) {
+  .table {
+    flex-direction: column;
+  }
+  
+  .row {
+    width: auto;
+  }
+  
+  .header,
+  .cell {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
