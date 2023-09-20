@@ -1,11 +1,10 @@
-.table-container {
-  max-width: 1600px;
-  margin: 0 auto;
+.container {
+  flex-wrap: wrap;
 }
 
 .table {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .row {
@@ -14,27 +13,28 @@
   width: 100%;
 }
 
-.header,
-.cell {
+.header, .cell {
   flex-grow: 1;
+  max-width: calc(20% - 4px);
   margin: 2px;
   background-color: lightgray;
   text-align: center;
-  padding: 10px;
 }
 
-@media (max-width: 421px) {
+@media (max-width: 420px) {
   .table {
     flex-direction: column;
+    
   }
   
   .row {
     width: auto;
   }
   
-  .header,
-  .cell {
-    min-width: 100%;
-    max-width: 100%;
+  .header {
+    display: none;
   }
-}
+  
+
+  }
+
