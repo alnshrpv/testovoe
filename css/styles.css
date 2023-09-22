@@ -1,65 +1,48 @@
-.container {
-  flex-wrap: wrap;
-  display: flex;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 .table {
-  max-width: 1600px;
-  margin: 0 auto;
-  
-
-}
-
-.row {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  
-  
-  
 }
-
-.header {
-  flex-grow: 1;
-  max-width: calc(20% - 4px);
-  margin: 2px;
-  background-color: lightgray;
+.table div {
   text-align: center;
-
+  width: calc(20% - 4px);
+  margin: 2px;
+  padding: 2px;
+  background: lightgray;
 }
- .cell {
-  flex-grow: 1;
-  max-width: calc(20% - 4px);
-  margin: 2px;
-  background-color: lightgray;
-  text-align: center;
-  flex-direction: column;
-  display:flex;
-  flex-wrap: wrap;
+.table .header {
+  background: #cec;
+}
+.table .cell {
   transition: background-color 0.3s ease;
 }
 .cell:hover{
   background-color: yellow;
 }
-.matched {
-  background-color: red;
+
+.highlight {
+  background-color: red !important;
 }
 
 @media (max-width: 420px) {
-  .container {
+  .table {
     flex-direction: column;
-    
-  }
-  
-   .header {
-    display: none;
   }
 
-  .row {
-    width: auto;
-    flex-direction: column;
-    flex-wrap: nowrap;
+  .table .header {
+    display: none;
   }
-  
+  .table div {
+    width: auto;
+  }
+  .table :nth-child(5n+1) { order: 1; }
+  .table :nth-child(5n+2) { order: 2; }
+  .table :nth-child(5n+3) { order: 3; }
+  .table :nth-child(5n+4) { order: 4; }
+  .table :nth-child(5n+5) { order: 5; }
 }
+
