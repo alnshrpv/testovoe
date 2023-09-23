@@ -1,40 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Таблица</title>
     <link rel="stylesheet" href="css/styles.css">
+    <br>
+    <div class="searchbutton">
+        <input type="text" id="search" placeholder="Поиск по таблице">
+        <button onclick="performSearch()" class="button">Найти</button>
+        <div id="searchCount"></div>
+        <script src="js/script.js"></script>
+    </div>
 </head>
 <div class="table">
-        <div class="header">Фамилия</div>
-        <div class="header">Имя</div>
-        <div class="header">Отчество</div>
-        <div class="header">Возраст</div>
-        <div class="header">Город</div>
-        <div class="cell">Петров</div>
-        <div class="cell">Петр</div>
-        <div class="cell">Ячейка 3</div>
-        <div class="cell">Ячейка 4</div>
-        <div class="cell">Ячейка 5</div>
-        <div class="cell">Волков</div>
-        <div class="cell">Иннокентий</div>
-        <div class="cell">Ячейка 3</div>
-        <div class="cell">Ячейка 4</div>
-        <div class="cell">Ячейка 5</div>
-        <div class="cell">Иванов</div>
-        <div class="cell">Иван</div>
-        <div class="cell">Ячейка 3</div>
-        <div class="cell">Ячейка 4</div>
-        <div class="cell">Ячейка 5</div>
-        <div class="cell">Сидоров</div>
-        <div class="cell">Егор</div>
-        <div class="cell">Ячейка 3</div>
-        <div class="cell">Ячейка 4</div>
-        <div class="cell">Ячейка 5</div>
+    <div class="header">Фамилия</div>
+    <div class="header">Имя</div>
+    <div class="header">Отчество</div>
+    <div class="header">Возраст (лет) </div>
+    <div class="header">Город</div>
+    <div class="cell">Пушкин</div>
+    <div class="cell">Александр</div>
+    <div class="cell">Сергеевич</div>
+    <div class="cell">37</div>
+    <div class="cell">Москва</div>
+    <div class="cell">Есенин</div>
+    <div class="cell">Сергей</div>
+    <div class="cell">Александрович</div>
+    <div class="cell">30</div>
+    <div class="cell">Константиново</div>
+    <div class="cell">Маяковский</div>
+    <div class="cell">Владимир</div>
+    <div class="cell">Владимирович</div>
+    <div class="cell">36</div>
+    <div class="cell">Багдади</div>
+    <div class="cell">Булгаков</div>
+    <div class="cell">Михаил</div>
+    <div class="cell">Афанасьевич</div>
+    <div class="cell">48</div>
+    <div class="cell">Киев</div>
 </div>
-<input type="text" id="search" placeholder="Поиск по таблице">
-<button onclick="performSearch()">Найти</button>
-<div id="searchCount"></div>
-<script src="js/script.js"></script>
 </body>
 </html>

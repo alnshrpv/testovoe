@@ -1,38 +1,71 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-.table {
+.table  {
+  max-width: 1600px;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #c6c6e8;
+  border: 10px solid #c6c6e8;
+  border-radius: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .table div {
   text-align: center;
   width: calc(20% - 4px);
   margin: 2px;
   padding: 2px;
-  background: lightgray;
+  background: #dbf2e0;
+  border-radius: 3px;
 }
 .table .header {
-  background: #cec;
+  background: #a3e3b3;
+  font-size: 18px;
+  font-weight: bold;
 }
 .table .cell {
   transition: background-color 0.3s ease;
 }
 .cell:hover{
-  background-color: yellow;
+  background-color: #ffee86;
 }
 
 .highlight {
-  background-color: red !important;
+  background-color: #e85253 !important;
+  transition: background-color 2s ease;
+}
+.searchbutton{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+    justify-content: center;
+}
+#search {
+  border: 10px solid #c6c6e8;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 18px;
+  background-color: #dbf2e0;
+}
+#searchCount {
+  font-size: 18px;
+  margin-left: 11px;
+  display: flex;
+  align-items: center;
+}
+.button{
+  font-size: 18px;
+  height: 43px;
+  border: 10px solid #c6c6e8;
+  border-radius: 20px 20px 20px 20px;
+  background-color:#dbf2e0;
 }
 
 @media (max-width: 420px) {
   .table {
     flex-direction: column;
+    justify-content: center;
   }
-
   .table .header {
     display: none;
   }
@@ -44,5 +77,9 @@
   .table :nth-child(5n+3) { order: 3; }
   .table :nth-child(5n+4) { order: 4; }
   .table :nth-child(5n+5) { order: 5; }
+  
+  .searchbutton{
+    flex-direction: column;
+  }
 }
 
